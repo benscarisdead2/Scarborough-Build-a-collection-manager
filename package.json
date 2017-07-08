@@ -1,0 +1,25 @@
+{
+  "name": "build-a-collection-manager",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benscarisdead2/Scarborough-Build-a-collection-manager.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/benscarisdead2/Scarborough-Build-a-collection-manager/issues"
+  },
+  "homepage": "https://github.com/benscarisdead2/Scarborough-Build-a-collection-manager#readme",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "mongoose": "^4.10.8",
+    "passport": "^0.3.2",
+    "passport-http": "^0.3.0"
+  }
+}
