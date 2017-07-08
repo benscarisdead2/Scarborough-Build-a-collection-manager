@@ -9,7 +9,7 @@ const routes = require("./routes/index.js");
 const app = express();
 
 // Set Port
-app.set('port', (process.env.PORT || 3000));
+app.set('port', (process.env.PORT || 3006));
 
 // Serve static files to server
 app.use(express.static(path.join(__dirname, "public")));
@@ -18,7 +18,7 @@ app.use(express.static(path.join(__dirname, "public")));
 app.engine("mustache", mustacheExpress());
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "mustache");
-app.set("layout", "layout");
+// app.set("layout", "layout");
 
 // Body parser and validator implementation
 app.use(bodyParser.json());

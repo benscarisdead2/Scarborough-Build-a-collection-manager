@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Edit | BlurayDiscs.com</title>
+</head>
+
+<body>
+    <h1>Edit a Bluray Disc</h1>
+    <form class="newDiscForm" action="/edit" method="post">
+        {{#moviez}}
+        <label>Name of movie:</label>
+        <input type="text" name="name" value="{{name}}"><br>
+        <label>What genre?</label>
+        <input type="text" name="genre" value="{{genre}}"><br>
+        <label>What year?</label>
+        <input type="text" name="year" value="{{year}}"><br>
+        <label>MPAA Rating</label>
+        <input type="text" name="filmrating" value="{{mpaaRating}}"><br>
+        <label>Rotten Tomato Score</label>
+        <input type="text" name="rottentomatoscore" value="{{rottenTomatoScore}}"><br> {{#specialFeatures}}
+        <label># of Deleted Scenes</label>
+        <input type="text" name="numberofdeletedscenes" value="{{deletedScenes}}"><br>
+        <label># of Alternate Endings</label>
+        <input type="text" name="numberofendings" value="{{alternateEndings}}"><br>
+        <label>Audio Commentary Track?</label>
+        <input type="text" name="audiocommentary" value="{{audioCommentary}}"><br> {{/specialFeatures}}
+        <label>Total Run Time in Minutes:</label>
+        <input type="text" name="runtime" value="{{runTime}}"><br>
+        <button type="submit" name="edit" value="{{id}}">Submit</button> {{/moviez}}
+    </form>
+</body>
+
+</html>
