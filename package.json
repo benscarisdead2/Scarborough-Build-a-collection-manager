@@ -18,8 +18,12 @@
   "homepage": "https://github.com/benscarisdead2/Scarborough-Build-a-collection-manager#readme",
   "dependencies": {
     "bluebird": "^3.5.0",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
     "mongoose": "^4.10.8",
+    "mustache-express": "^1.2.5",
     "passport": "^0.3.2",
-    "passport-http": "^0.3.0"
+    "passport-http": "^0.3.0",
+    "path": "^0.12.7"
   }
 }
